@@ -5,14 +5,12 @@ A lightweight RESTful API for managing car dealership data — makes, models, tr
 ## Project Overview
 This API supports management of car data including:
 
-````markdown
 -  Makes: Car manufacturers (e.g., Toyota, Honda)  
 -  Models: Specific car models linked to makes (e.g., Camry)  
 -  Trims: Variants of models with pricing (e.g., XLE trim)  
 -  Features: Optional features with individual costs (e.g., Navigation System)  
 -  Relationships are implemented with proper SQL foreign keys and many-to-many join tables (e.g., trims to features).
 
-````
 ## Setup Instructions
 
 ### Prerequisites
