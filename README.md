@@ -1,23 +1,18 @@
-Sure! Here's a clean, professional README template tailored to your project that you can copy-paste directly to GitHub:
-
 ````markdown
 # Car Inventory API
 
 A lightweight RESTful API for managing car dealership data — makes, models, trims, and features. 
 
----
-
 ## Project Overview
 
 This API supports management of car data including:  
-- **Makes:** Car manufacturers (e.g., Toyota, Honda)  
-- **Models:** Specific car models linked to makes (e.g., Camry)  
-- **Trims:** Variants of models with pricing (e.g., XLE trim)  
-- **Features:** Optional features with individual costs (e.g., Navigation System)  
-- Relationships are implemented with proper SQL foreign keys and many-to-many join tables (e.g., trims to features).
+-  Makes: Car manufacturers (e.g., Toyota, Honda)  
+-  Models: Specific car models linked to makes (e.g., Camry)  
+-  Trims: Variants of models with pricing (e.g., XLE trim)  
+-  Features: Optional features with individual costs (e.g., Navigation System)  
+-  Relationships are implemented with proper SQL foreign keys and many-to-many join tables (e.g., trims to features).
 
----
-
+````
 ## Setup Instructions
 
 ### Prerequisites
@@ -28,19 +23,14 @@ This API supports management of car data including:
 
 ---
 
-### 1. Clone the repository
+### 1. Clone the repository and Install dependencies
 
 ```bash
 git clone Car-Data-Management-API
-````
-
-### 2. Install dependencies
-
-```bash
 npm install
 ```
 
-### 3. Configure PostgreSQL connection
+### 2. Configure PostgreSQL connection
 
 Create a `.env` file in the root directory with your PostgreSQL credentials:
 
@@ -57,7 +47,7 @@ Make sure your PostgreSQL user and database exist and have appropriate privilege
 
 ---
 
-### 4. Create database schema and seed sample data
+### 3. Create database schema and seed sample data
 
 Run the SQL scripts to create tables and insert sample data.
 
@@ -111,19 +101,13 @@ psql -U your_postgres_username -d car_inventory -f db/seed.sql
 npm run dev
 ```
 
-### Production Mode
-
-```bash
-npm start
-```
-
 The server will start on `http://localhost:3001` (or the port set in your `.env`).
 
 ---
 
 ## Testing the API
 
-Use `curl`, Postman, or any HTTP client to test endpoints. Examples:
+Use `curl`, Postman, or any HTTP client to test endpoints. Using `curl` in your terminal:
 
 ```bash
 curl http://localhost:3001/api/makes
@@ -139,11 +123,5 @@ curl http://localhost:3001/api/trims/1
 * This API uses PostgreSQL connection pooling with the `pg` package.
 * Basic error handling is implemented for all endpoints.
 * Designed to be lightweight and easily extensible for future integration with frontend applications.
-
----
-
-## Author
-
-Ayush Mainali
 
 ---
