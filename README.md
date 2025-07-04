@@ -1,11 +1,11 @@
-````markdown
 # Car Inventory API
 
 A lightweight RESTful API for managing car dealership data — makes, models, trims, and features. 
 
 ## Project Overview
+This API supports management of car data including:
 
-This API supports management of car data including:  
+````markdown
 -  Makes: Car manufacturers (e.g., Toyota, Honda)  
 -  Models: Specific car models linked to makes (e.g., Camry)  
 -  Trims: Variants of models with pricing (e.g., XLE trim)  
